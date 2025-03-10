@@ -22,9 +22,11 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export', // Enables static export for GitHub Pages
-  basePath: '/lusso-toyz-landing', // GitHub repo name
-  assetPrefix: '/lusso-toyz-landing/', // Ensure assets load correctly
+  // GitHub Pages configuration
+  basePath: '/lusso-toyz-landing',
+  assetPrefix: '/lusso-toyz-landing/',
+  // Ensure trailing slash for better path resolution
+  trailingSlash: true,
 }
 
 function mergeConfig(nextConfig, userConfig) {

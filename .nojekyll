@@ -1,0 +1,8 @@
+"scripts": {
+  "dev": "next dev",
+  "start": "next start",
+  "lint": "next lint",
+  "build": "next build",
+  "predeploy": "touch out/.nojekyll",
+  "deploy": "gh-pages -d out"
+}
