@@ -12,7 +12,15 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => 
+  
+{
+  setMounted(true),
+  setTheme('dark')
+}
+
+  
+  ,[])
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark")
@@ -30,7 +38,7 @@ const Navbar = () => {
     <nav className="bg-background/80 text-foreground sticky top-0 z-50 shadow-md backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <Link href="/" className="flex items-center">
               <Image
                 src="/lusso.svg"
