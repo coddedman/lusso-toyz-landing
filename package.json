@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "push": "git add -A && git commit -m \"update changes and bug fixes\" && git push origin master"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
